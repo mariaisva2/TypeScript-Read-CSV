@@ -1,0 +1,44 @@
+.navbar-custom {
+    background-color: #007bff;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+/* Estilo para el h1 */
+h1 {
+    color: #343a40;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#csvForm {
+    text-align: center;
+}
+
+#csvForm .form-label {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+#downloadCSV {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.table-custom {
+    background-color: #daecfe;
+    border: 1px solid #dee2e6;
+}
+
+.table-custom th,
+.table-custom td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+}
+
+.navbar-custom img {
+    max-height: 40px;
+}

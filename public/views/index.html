@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="TypeScript-Read-File" content="Clan Gates, Maria Isabel Vanegas ">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./img/mapa-de-colombia.png" type="icon">
+    <title>CSV</title>
+</head>
+<body>
+    <!-- Barra azul superior -->
+    <nav class="navbar navbar-custom">
+        <img src="./img/Logo_Gobierno_de_Colombia_2022.svg.png" alt="Logo Gobierno de Colombia">
+        <img src="./img/logo_pdagovco.png" alt="Logo PDA Gov Co">
+    </nav>
+
+    <section class="container mt-5">
+        <div class="row mb-4">
+            <div class="col">
+                <h1>CSV File Uploader</h1>
+            </div>
+        </div>
+        <!-- Form area -->
+        <div class="row mb-4">
+            <div class="col-md-6 offset-md-3">
+                <form action="" id="csvForm">
+                    <div class="mb-3">
+                        <label for="csvFile" class="form-label">CSV File</label>
+                        <input type="file" class="form-control" id="csvFile" accept=".csv,.txt">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-between">
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <button id="downloadCSV" class="btn btn-success" type="button">Download CSV</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-6 offset-md-3">
+                <div class="mb-3">
+                    <label for="searchInput" class="form-label">Search</label>
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- File display area -->
+                <div id="displayArea" class="table-custom"></div>
+                <nav id="paginationControlls" class="d-flex justify-content-center mt-4"></nav>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="../components/index.js"></script>
+</body>
+</html>
